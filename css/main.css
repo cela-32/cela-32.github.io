@@ -5,48 +5,146 @@
     font-style: normal;
 }
 
+* {
+    box-sizing: border-box;
+}
+
+html,
 body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0;
+    padding: 2vh 5%;
     background-color: #f5f1ea;
+    color: #222;
     font-family: "MyFont", sans-serif;
+    line-height: 1.6;
 }
 
 h1 {
-    font-size: 36px;
+    font-size: 2.25rem;
     font-weight: 700;
 }
 
 img {
+    display: block;
     max-width: 100%;
+    height: auto;
+}
+
+.logo {
+    width: 20%;
+    max-width: 20vw;
+    height: auto;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+nav a {
+    color: #244a2a;
+    font-weight: 700;
+}
+
+nav a:focus,
+.btn-primary:focus,
+a:focus {
+    outline: 0.2rem solid #244a2a;
+    outline-offset: 0.2rem;
 }
 
 .btn-primary {
     display: inline-block;
-    padding: 10px 20px;
-    background-color: #6b8e6b;
-    color: white;
+    padding: 0.6rem 1.25rem;
+    background-color: #356b3b;
+    color: #fff;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 0.3rem;
 }
 
 iframe {
-    max-width: 100%;
+    display: block;
     width: 80vw;
+    max-width: 100%;
     aspect-ratio: 16 / 9;
+    border: 0;
+}
+
+table {
+    width: 100%;
+    max-width: 100%;
+    border-collapse: collapse;
+}
+
+td {
+    width: 33.333%;
+    padding: 1%;
+    vertical-align: top;
+}
+
+.gallery-thumb {
+    width: 100%;
+    height: auto;
 }
 
 @media (max-width: 768px) {
-    nav {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
+    body {
+        padding: 2vh 4%;
+        font-size: 1.05rem;
     }
 
-    body {
-        font-size: 18px;
+    h1 {
+        font-size: 1.9rem;
+    }
+
+    .logo {
+        width: 35%;
+        max-width: 35vw;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
     }
 
     iframe {
         width: 100%;
-        aspect-ratio: 16 / 9;
+    }
+}
+
+@media (max-width: 360px) {
+    body {
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+
+    h1 {
+        font-size: 1.65rem;
+    }
+
+    .logo {
+        width: 45%;
+        max-width: 45vw;
+    }
+
+    table,
+    tbody,
+    tr,
+    td {
+        display: block;
+        width: 100%;
+    }
+
+    td {
+        padding: 1rem 0;
     }
 }
