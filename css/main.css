@@ -28,6 +28,12 @@ img {
     border-radius: 5px;
 }
 
+iframe {
+    max-width: 100%;
+    width: 560px;
+    height: 315px;
+}
+
 @media (max-width: 768px) {
     nav {
         display: flex;
@@ -37,5 +43,11 @@ img {
 
     body {
         font-size: 18px;
+    }
+
+    iframe {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 16 / 9;
     }
 }
