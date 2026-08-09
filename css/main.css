@@ -30,8 +30,8 @@ img {
 
 iframe {
     max-width: 100%;
-    width: 560px;
-    height: 315px;
+    width: 80vw;
+    aspect-ratio: 16 / 9;
 }
 
 @media (max-width: 768px) {
@@ -47,7 +47,6 @@ iframe {
 
     iframe {
         width: 100%;
-        height: auto;
         aspect-ratio: 16 / 9;
     }
 }
