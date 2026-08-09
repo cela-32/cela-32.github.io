@@ -1,0 +1,29 @@
+@font-face {
+    font-family: "MyFont";
+    src: url("../fonts/site-font.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color: #f5f1ea;
+    font-family: "MyFont", sans-serif;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: 700;
+}
+
+img {
+    max-width: 100%;
+}
+
+.btn-primary {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #6b8e6b;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
